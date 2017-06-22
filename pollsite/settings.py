@@ -32,7 +32,7 @@ SECURE_SSL_REDIRECT = os.environ.get('DJANGO_SETTING_HTTP_SECURITY') != "False"
 
 
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = [os.environ.get('DJANGO_SETTING_ALLOWED_HOSTS')]
 
 
 # Application definition
